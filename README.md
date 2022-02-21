@@ -1,1 +1,1 @@
-# web-worker-test
+# web-workers-test

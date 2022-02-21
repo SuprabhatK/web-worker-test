@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Worker Test</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="sidenav">
+        <a href="#multiplication">MulTiplication Table</a>
+        <a href="#square_root">Square Root</a>
+    </div>
+
+    <div class="main">
+        <span class="main-title">Web Workers Test</span>
+        <label class="switch">
+            <input type="checkbox" id="toggle" checked>
+            <span class="slider round"></span>
+        </label>
+        <h5 class="web-worker-tooltip" style="float: right;">Web Worker Service is Enabled</h5>
+        <br><br>
+
+        <div class="main-db">
+            <div id="multiplication">
+                <h2> Calculate Multiplication Of Table</h2>
+                <label for="rows">Input Number for rows:</label>
+                <input type="number" id="rows" name="rows"><br><br>
+
+                <label for="columns">Input Number for Columns:</label>
+                <input type="number" id="columns" name="columns"><br><br>
+
+                <input class="table-submit-btn" type="submit" value="Submit">
+            </div>
+
+            <div id="square_root" >
+                <h2> Calculate Square Of a number</h2>
+                <label for="rows">Input last Square of a number:</label>
+                <input type="number" id="rows_sqr" name="rows"><br><br>
+
+                <!-- <label for="columns">Input Number for Columns:</label>
+                <input type="number" id="columns" name="columns"><br><br> -->
+
+                <input class="table-submit-sqr-btn" type="submit" value="Submit">
+            </div><br><br>
+
+            <table class="main-render-table"></table><br><br>
+            <table class="main-render-table-sqr"></table>
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
